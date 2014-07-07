@@ -26,7 +26,7 @@ def head():
     except:
         print "Gecerli kullanicinin dosya okuma izni bulunmamaktadir"
         print "Dosya acilamiyor!"
-
+    dosya.close()
 #example to run code in terminal(command line)
 #python Head_Command_Python.py -n 10 text.txt
 if __name__ == '__main__':
