@@ -8,7 +8,7 @@ def head():
     usage = "usage: %prog [options] arg1 "
 
     parser.add_option("-n", "--number", type="string",
-                      help="Print Lines",
+                      help="Duz metin belgelerinin ilk bir kac satirini goruntuler",
                       dest="head", default="10")
     (options, args) = parser.parse_args()
 
