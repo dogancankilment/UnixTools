@@ -3,7 +3,6 @@ import os, sys
 from optparse import OptionParser
 
 def tail():
-    kontrol = 0
     parser = OptionParser()
     usage = "usage: %prog [options] arg1 "
 
@@ -39,7 +38,7 @@ def tail():
     dosya.close()
 
 #example to run code in terminal(command line)
-#python Tail_Command_Python.py -n 10 text.txt
+#python Tail_Command_Python.py -c 10 text.txt
 
 if __name__ == '__main__':
     tail()
