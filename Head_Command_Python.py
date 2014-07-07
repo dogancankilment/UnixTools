@@ -1,6 +1,4 @@
 #!/usr/bin/python
-#__author__ = 'markafonistajyer'
-
 import os, sys
 from optparse import OptionParser
 
@@ -30,6 +28,6 @@ def head():
         print "Dosya acilamiyor!"
 
 #example to run code in terminal(command line)
-#python LinuxCommands.py -n 10 text.txt
+#python Head_Command_Python.py -n 10 text.txt
 if __name__ == '__main__':
     head()
