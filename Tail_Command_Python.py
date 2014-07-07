@@ -1,5 +1,4 @@
 #!/usr/bin/python
-import os, sys
 from optparse import OptionParser
 
 def tail():
