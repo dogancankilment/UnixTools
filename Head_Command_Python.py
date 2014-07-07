@@ -19,10 +19,12 @@ def head():
         dosya=open(args[0],"r")
 
         for satir in dosya:
-            kontrol=kontrol+1
-            print satir.strip()
-            if kontrol >= kac_satir:
+            if( kontrol < kac_satir):
+                kontrol=kontrol+1
+                print satir.strip()
+            else:
                 break
+
     except:
         print "Gecerli kullanicinin dosya okuma izni bulunmamaktadir"
         print "Dosya acilamiyor!"
