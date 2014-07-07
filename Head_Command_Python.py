@@ -9,10 +9,10 @@ def head():
 
     parser.add_option("-n", "--number", type="string",
                       help="Print Lines",
-                      dest="tail", default="10")
+                      dest="head", default="10")
     (options, args) = parser.parse_args()
 
-    kac_satir = int(options.tail)
+    kac_satir = int(options.head)
 
     #with open(args[0], "r") as dosya:
     try:
