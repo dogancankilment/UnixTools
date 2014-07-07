@@ -7,7 +7,7 @@ def tail():
     usage = "usage: %prog [options] arg1 "
 
     parser.add_option("-c", "--continuous", type="int",
-                      help="Duz metin belgelerinin son bir kac satirini surekli olarak goruntuler",
+                      help="Duz metin belgelerinin son bir kac satirini goruntuler",
                       dest="tail", default="10")
     (options, args) = parser.parse_args()
 
