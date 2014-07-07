@@ -1,5 +1,5 @@
 #!/usr/bin/python
-__author__ = 'markafonistajyer'
+#__author__ = 'markafonistajyer'
 
 import os, sys
 from optparse import OptionParser
