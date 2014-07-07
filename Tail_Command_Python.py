@@ -2,10 +2,11 @@
 from optparse import OptionParser
 
 def tail():
+
     parser = OptionParser()
     usage = "usage: %prog [options] arg1 "
 
-    parser.add_option("-c", "--continuous", type="string",
+    parser.add_option("-c", "--continuous", type="int",
                       help="Duz metin belgelerinin son bir kac satirini surekli olarak goruntuler",
                       dest="tail", default="10")
     (options, args) = parser.parse_args()
