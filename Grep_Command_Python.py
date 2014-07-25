@@ -1,6 +1,7 @@
 #!/usr/bin/python
 from optparse import OptionParser
 
+
 def grep():
     parser = OptionParser()
     usage = "usage: %prog [options] arg1 "
@@ -24,5 +25,6 @@ def grep():
 
 #example to run code in terminal(command line)
 #python Head_Command_Python.py -n 10 text.txt
+
 if __name__ == '__main__':
     grep()

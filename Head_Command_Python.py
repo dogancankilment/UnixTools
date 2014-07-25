@@ -1,6 +1,7 @@
 #!/usr/bin/python
 from optparse import OptionParser
 
+
 def head():
 
     kontrol = 0
@@ -33,5 +34,6 @@ def head():
 
 #example to run code in terminal(command line)
 #python Head_Command_Python.py -n 10 text.txt
+
 if __name__ == '__main__':
     head()
