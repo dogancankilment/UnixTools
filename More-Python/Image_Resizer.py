@@ -1,11 +1,17 @@
+#  import os, sys
+
 import PIL
 from PIL import Image
-import os, sys
 
 
-basewidth = 300
-img = Image.open('deneme.jpg')
-wpercent = (basewidth / float(img.size[0]))
-hsize = int((float(img.size[1]) * float(wpercent)))
-img = img.resize((basewidth, hsize), PIL.Image.ANTIALIAS)
-img.save('resized_image.jpg')
+def image_resizer():
+    basewidth = 300
+    img = Image.open('deneme.jpg')
+    wpercent = (basewidth / float(img.size[0]))
+    hsize = int((float(img.size[1]) * float(wpercent)))
+    img = img.resize((basewidth, hsize), PIL.Image.ANTIALIAS)
+    img.save('resized_image.jpg')
+
+
+if __name__ == '__main__':
+    image_resizer()
