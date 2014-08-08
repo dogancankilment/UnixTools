@@ -1,30 +1,38 @@
-#!/usr/bin/python
 from optparse import OptionParser
 
 
 def grep():
+    """
+    Option parser for command line
+    input variables in linux terminal.
+
+    example to run code in terminal(command line)
+    python Grep_Command_Python.py -w <word> file_name.txt
+
+    """
+
     parser = OptionParser()
     usage = "usage: %prog [options] arg1 "
 
     parser.add_option("-c", "--count", type="string",
-                      help="Eslesen ifadenin dosya icerisinde toplamda kac defa gectigini soyler",
+                      help="print lines matching a pattern",
                       dest="grep_c", default=" ")
 
     parser.add_option("-w", "--word", type="string",
-                      help="Satirlardaki kelime eslesmesi",
+                      help="Select  only  those lines"
+                           "containing matches that "
+                           "form whole words.",
                       dest="grep_w", default=" ")
 
     (options, args) = parser.parse_args()
 
-    gonderilen_str = str(options.grep_w)
-    dosya=open(args[0],"r")
+    sending_str = str(options.grep_w)
+    open_file = open(args[0], "r")
 
-    for satir in dosya:
-        if gonderilen_str in satir.split():
-            print satir
+    for line in open_file:
+        if sending_str in line.split():
+            print line
 
-#example to run code in terminal(command line)
-#python Head_Command_Python.py -n 10 text.txt
 
 if __name__ == '__main__':
     grep()

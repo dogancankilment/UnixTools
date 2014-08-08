@@ -7,6 +7,7 @@ def mail_sender():
     server.starttls()
 
     # take password variable from .bashrc file
+    # this usage for security
     mail_pass = str(os.getenv("MAIL_PASS"))
     server.login('root_dck@gmail.com', mail_pass)
 
@@ -17,3 +18,4 @@ def mail_sender():
 
 if __name__ == '__main__':
     mail_sender()
+

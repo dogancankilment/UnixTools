@@ -1,10 +1,17 @@
-#!/usr/bin/python
 from optparse import OptionParser
 
 
 def head():
+    """
+    Option parser for command line
+    input variables in linux terminal.
 
-    kontrol = 0
+    example to run code in terminal(command line)
+    python Head_Command_Python.py -n 10 file
+
+    """
+
+    check = 0
     parser = OptionParser()
     usage = "usage: %prog [options] arg1 "
 
@@ -13,27 +20,26 @@ def head():
                       dest="head", default="10")
     (options, args) = parser.parse_args()
 
-    kac_satir = int(options.head)
+    how_many_lines = int(options.head)
 
     #with open(args[0], "r") as dosya:
-    try:
-        dosya=open(args[0],"r")
 
-        for satir in dosya:
-            if( kontrol < kac_satir):
-                kontrol=kontrol+1
-                print satir.strip()
+    try:
+        open_file=open(args[0],"r")
+
+        for line in open_file:
+            if check < how_many_lines:
+                check = check+1
+                print line.strip()
             else:
                 break
 
     except:
-        print "Gecerli kullanicinin dosya okuma izni bulunmamaktadir"
-        print "Dosya acilamiyor!"
+        print "Valid user hasn't got read permission"
+        print "File didn't open!"
 
-    dosya.close()
+    open_file.close()
 
-#example to run code in terminal(command line)
-#python Head_Command_Python.py -n 10 text.txt
 
 if __name__ == '__main__':
     head()

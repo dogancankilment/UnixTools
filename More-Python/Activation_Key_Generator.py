@@ -20,5 +20,6 @@ def activation_key_generator():
     print "email: \n", email
     print "activation_key: \n", activation_key
 
+
 if __name__ == '__main__':
     activation_key_generator()
