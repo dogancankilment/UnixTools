@@ -1,4 +1,15 @@
 UnixTools
 =========
 
-Reimplement Some Unix Commands in Python
+> Reimplement Some Unix Commands in Python
+    
+* *Grep Command*
+* *Head Command*
+* *Tail Command*
+    
+> More Python
+    
+* *Activation Key Generator (for tokens in sending mails activation link)*
+* *Image Resizer (using PIL)*
+* *Mail Sender*
+* *Mail Sender Django (It must be run with your django-app settings.py)*
