@@ -11,5 +11,6 @@ UnixTools
     
 * *Activation Key Generator (for tokens in sending mails activation link)*
 * *Image Resizer (using PIL)*
+* *watermark images (using PIL)*
 * *Mail Sender*
 * *Mail Sender Django (It must be run with your django-app settings.py)*
