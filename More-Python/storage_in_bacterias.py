@@ -53,7 +53,7 @@ def radix_changer(char_list, binary_list):
                 6 / 4 = 1 **
                    ...
 
-            so our binary code in starred line
+            so our binary code in starred lines
                 real character: c
                 in_ascii_format: 99
                 binary: 1203 :)
@@ -85,7 +85,8 @@ def recombinant_dna(binary_list):
         its mean max_value for each character is 3
         for ex.:
             entering string: can
-            ascii: 1203 - 1201 - 1232
+            by one by for chars;
+                ascii: 1203 - 1201 - 1232
             and I will format this blocks
             for first char
                 1 -> T
