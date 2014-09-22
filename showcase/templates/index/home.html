@@ -1,2 +1,31 @@
 {% extends "base.html" %}
+{% block job %}
 
+<form method="POST" class="form-signin" role="form" action="">
+    <div class="control-group">
+        <label>Your Bash Command</label>
+            <div class="controls">
+            {% for field in form %}
+                <input type="{{field.field.widget.input_type}}" name="{{field.html_name}}" class="form-control" placeholder="{{field.label}}" required autofocus>
+            {% endfor %}
+            </div>
+        {% if result %}
+        <label>Result</label>
+            <div class="controls">
+                    <textarea type="text" style="width:555px;height:300px">
+                        {% for lines in result %}
+                            {{ lines }}
+                        {% endfor %}
+                    </textarea>
+            </div>
+        {% else %}
+            {% if request.POST %}
+                Yazdığınız Komut Bulunamadı! Lütfen Tekrar Deneyiniz
+            {% endif %}
+        {% endif %}
+    </div>
+
+    {% csrf_token %}
+    <button type="submit" class="btn btn-theme pull-right">Run My Command</button>
+</form>
+{% endblock job %}
