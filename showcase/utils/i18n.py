@@ -19,7 +19,8 @@ language_code, encoding_type = locale.getdefaultlocale()
 if language_code:
     languages = [language_code]
 
-languages += DEFAULT_LANGUAGES
+else:
+    languages = DEFAULT_LANGUAGES
 
 gettext.install(True, localedir=None, unicode=1)
 
