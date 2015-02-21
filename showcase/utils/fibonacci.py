@@ -3,12 +3,11 @@ def fibo_loop(n):
     Fibonacci calculation loop format
     """
 
-    start_time = time.time()
     a, b = 0, 1
 
     for i in range(0, n):
         a, b = b, a + b
-    elapsed_time = time.time()
+
     return a
 
 
