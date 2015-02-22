@@ -1,5 +1,6 @@
 import time
 
+
 def fibo_loop(n):
     """
     Fibonacci calculation loop format
@@ -32,9 +33,9 @@ if __name__ == '__main__':
     """
     --testing--
 
-        start = time.clock()
+        start_time = time.time()
         fibo_loop(10)
-        elapsed = time.clock() - start
-        
-        print "%2f" %elapsed
+        elapsed_time = time.time() - start_time
+
+        print "%2f" % elapsed
     """
