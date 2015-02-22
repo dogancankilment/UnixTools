@@ -1,3 +1,5 @@
+import time
+
 def fibo_loop(n):
     """
     Fibonacci calculation loop format
@@ -26,3 +28,13 @@ def fibo_recursive(n):
 
 if __name__ == '__main__':
     pass
+
+    """
+    --testing--
+
+        start = time.clock()
+        fibo_loop(10)
+        elapsed = time.clock() - start
+        
+        print "%2f" %elapsed
+    """
