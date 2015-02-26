@@ -1,5 +1,4 @@
 def primeNumber_1():
-
     division_count = 0
     number = input("give me the number ")
 
@@ -15,7 +14,6 @@ def primeNumber_1():
 
 
 def primeNumber_2():
-
     i = 2
     number = input("give me the number: ")
 

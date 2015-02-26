@@ -1,5 +1,4 @@
 def factorial():
-
     result = 1
     top = input("give me the number ")
     for i in range(1, top+1):

@@ -1,5 +1,4 @@
 def perfect_number():
-
     sum, count, number = 0, 0, 1
     top = input("enter a top value: ")
 
