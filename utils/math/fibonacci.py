@@ -30,7 +30,7 @@ if __name__ == '__main__':
     """
     --testing--
         import time
-        
+
         start_time = time.time()
         fibo_loop(10)
         elapsed_time = time.time() - start_time
