@@ -5,6 +5,7 @@ def get_max(array):
     """
     Find max value of random array
     with using bubble sort algorithm
+    Algorithm Complexity: O(n**2)
     """
 
     for k in range(1, len(array)-1):
